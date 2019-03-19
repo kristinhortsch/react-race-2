@@ -5,7 +5,7 @@ export default function Quote({ quote, onClick }) {
   return (
     <>
       <h1>Quote</h1>
-      <p>{quote.text}</p>
+      <p>{quote[0].text}</p>
       <button onClick={onClick}>New Quote</button>
     </>
   );
