@@ -1,3 +1,4 @@
-import { get } from './request';
-
-export const getQuotes = () => get('/random');
+export const getQuotes = () => {
+  return fetch(`${process.env.API_URL}/random`)
+    .then(res => res.json());
+};
