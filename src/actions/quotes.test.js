@@ -1,5 +1,7 @@
 import { fetchQuotes, FETCH_QUOTES } from './quotes';
 
+jest.mock('../services/quotes');
+
 describe('actions test', () => {
   it('fetches chirps', () => {
     const action = fetchQuotes();
